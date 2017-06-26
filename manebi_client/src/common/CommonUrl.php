@@ -16,8 +16,8 @@ class CommonUrl {
 	protected $exception;
 	
 	protected $APIs = array(
-		'MakeToken' => 'http://○○○.manebi-demo.com/single-signon/token',
-		'CheckPermission' => 'http://○○○.manebi-demo.com/single-signon/permission'
+		'MakeToken' => MAEDU_SAMPLE_MAKE_TOKEN,
+		'CheckPermission' => MAEDU_SAMPLE_CHECK_PERMISSION
 	);
 
 	/**

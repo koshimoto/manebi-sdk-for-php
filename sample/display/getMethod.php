@@ -65,6 +65,63 @@
 						</select>
 					</td>
 				</tr>
+				<tr>
+					<th scope="row">タグ(tags)</th>
+					<td><input name="tags" type="text" value="<?php echo isset($_GET['tags'])? $_GET['tags'] : '' ?>" tabindex="11" /></td>
+				</tr>
+				<tr>
+					<th scope="row">ユーザの 労働形態(jobs_type)</th>
+					<td>
+						<select name="jobs_type" tabindex="14">
+							<option value="フルタイム (１年以上雇用見込み )">フルタイム (１年以上雇用見込み )</option>
+							<option value="短時間勤務 (１年以上雇用見込み )">短時間勤務 (１年以上雇用見込み )</option>
+							<option value="短時間勤務 (１年以上雇用見込み )">１年未満雇用見込み</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">ユーザの在籍年目(seniority_year)</th>
+					<td>
+						<select name="seniority_year" tabindex="14">
+							<option value="1年目">1年目</option>
+							<option value="2年目">2年目</option>
+							<option value="3年目">3年目</option>
+							<option value="4年目以降">4年目以降</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">ユーザの種別(haken_type)</th>
+					<td>
+						<select name="seniority_year" tabindex="14">
+							<option value="派遣前（雇入時）">派遣前（雇入時）</option>
+							<option value="派遣中">派遣中</option>
+							<option value="入社○年目">入社○年目</option>
+							<option value="待機中">待機中</option>
+							<option value="無期雇用派遣労働者">無期雇用派遣労働者</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">自由項目1(free_item_1)</th>
+					<td><input name="free_item_1" type="text" value="<?php echo isset($_GET['free_item_1'])? $_GET['free_item_1'] : '' ?>" tabindex="11" /></td>
+				</tr>
+				<tr>
+					<th scope="row">自由項目2(free_item_2)</th>
+					<td><input name="free_item_2" type="text" value="<?php echo isset($_GET['free_item_2'])? $_GET['free_item_2'] : '' ?>" tabindex="11" /></td>
+				</tr>
+				<tr>
+					<th scope="row">自由項目3(free_item_3)</th>
+					<td><input name="free_item_3" type="text" value="<?php echo isset($_GET['free_item_3'])? $_GET['free_item_3'] : '' ?>" tabindex="11" /></td>
+				</tr>
+				<tr>
+					<th scope="row">受講開始日(start_date)</th>
+					<td><input name="start_date" type="text" value="<?php echo isset($_GET['start_date'])? $_GET['start_date'] : '' ?>" tabindex="11" /></td>
+				</tr>
+				<tr>
+					<th scope="row">受講終了日(end_date)</th>
+					<td><input name="end_date" type="text" value="<?php echo isset($_GET['end_date'])? $_GET['end_date'] : '' ?>" tabindex="11" /></td>
+				</tr>
 			</tbody>
 		</table>
 		

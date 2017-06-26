@@ -10,8 +10,8 @@ require_once MAEDU_ROOT_BASE . '/manebi_client/src/common/CommonUrl.php';
  */
 class ExecTran{
 	protected $clients = array(
-		'client_id' => '',
-		'client_secret' => ''
+		'client_id' => MAEDU_SAMPLE_CLIENT_ID,
+		'client_secret' => MAEDU_SAMPLE_CLIENT_SECRET
 	);
 	
 	public function makeToken($loginId){
