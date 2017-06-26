@@ -11,6 +11,7 @@ if( isset( $_POST['submit'] ) ){
 		return $execTran->checkPermission(array(
 				'login_id' => $_POST['login_id'],
 				'access_token' => $token,
+				'user_email' => $_POST['user_email'],
 				'nick_name' => $_POST['nick_name'],
 				'first_name' => $_POST['first_name'],
 				'last_name' => $_POST['last_name'],

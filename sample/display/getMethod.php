@@ -22,6 +22,10 @@
 					<td><input name="login_id" type="text" value="<?php echo isset($_GET['login_id'])? $_GET['login_id'] : '' ?>" tabindex="11" /></td>
 				</tr>
 				<tr>
+					<th scope="row">メール(user_email)</th>
+					<td><input name="user_email" type="text" value="<?php echo isset($_GET['user_email'])? $_GET['user_email'] : '' ?>" tabindex="11" /></td>
+				</tr>
+				<tr>
 					<th scope="row">ニックネーム(nick_name)</th>
 					<td><input name="nick_name" type="text" value="<?php echo isset($_GET['nick_name'])? $_GET['nick_name'] : '' ?>" tabindex="11" /></td>
 				</tr>
@@ -64,7 +68,7 @@
 </div>
 
 <div id="footer">
-	<em>Copyright (c) manebi,Inc. All Rights Reserved.</em>
+	<em>Copyright (c) 2013 manebi,Inc. All Rights Reserved.</em>
 </div>
 
 
