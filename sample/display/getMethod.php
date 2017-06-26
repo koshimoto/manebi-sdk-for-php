@@ -14,6 +14,11 @@
 </div>
 
 <div id="main">
+	<?php if(isset($result['msg'])) { ?>
+	<div class="error-msg">
+		<?php echo $result['msg'];?>
+	</div>
+	<?php } ?>
 	<form action="<?php echo $_SERVER['REQUEST_URI'] ?>" method="post">
 		<table>
 			<tbody>
@@ -52,7 +57,7 @@
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">性別(sex_id')</th>
+					<th scope="row">性別(sex_id)</th>
 					<td>
 						<select name="sex_id" tabindex="14">
 							<option value="男性">男性</option>

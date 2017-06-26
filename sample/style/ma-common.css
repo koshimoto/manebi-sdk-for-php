@@ -73,6 +73,7 @@ table{
 	border-style:solid;
 	border-width:1px;
 	border-color: #aaaaaa;
+	width: 640px;
 }
 table caption{
 	text-align: left;
@@ -90,11 +91,18 @@ table td{
 table tfoot td{
 	text-align:right;
 }
-form input{
+form input,
+form input[type='submit']{
 	cursor:pointer;
 	font-size:105%;
 	font-family: monospace;
 	height: 24px;
+	width: 360px;
+}
+form input[type='submit']{
+	font-size: 15px;
+    width: 110px;
+    height: 32px;
 }
 form select{
 	cursor:pointer;
@@ -105,4 +113,9 @@ form label{
 .num{
 	text-align: right;
 	padding-right: 2px;
+}
+.error-msg{
+	margin-bottom: 20px;
+    color: #cb0007;
+    font-size: 16px;
 }

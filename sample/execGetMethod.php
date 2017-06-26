@@ -6,7 +6,8 @@ if( isset( $_POST['submit'] ) ){
 	
 	//入力パラメータクラスをインスタンス化します
 	$execTran = new ExecTran();
-	$token = $execTran->makeToken($_POST['login_id']);
+	$result = $execTran->makeToken($_POST['login_id']);
+	$token = isset($result['access_token'])?$result['access_token']:null;
 	if (!empty($token)) {
 		return $execTran->checkPermission(array(
 				'login_id' => $_POST['login_id'],
@@ -20,6 +21,7 @@ if( isset( $_POST['submit'] ) ){
 				'sex_id' => $_POST['sex_id']
 		));
 	}
+	
 }
 
 //EntryTran入力・結果画面
