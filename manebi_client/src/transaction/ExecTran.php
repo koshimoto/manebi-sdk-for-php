@@ -20,7 +20,7 @@ class ExecTran{
 		$commonsUrl = new CommonUrl(); 
 		$result = $commonsUrl->callProtocol($params, ucfirst(__FUNCTION__));
 		
-		return !empty($result)?$result['access_token']:null;
+		return !empty($result)?$result:null;
 	}
 	
 	public function checkPermission($params){
