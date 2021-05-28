@@ -24,12 +24,12 @@ class ParamParser {
 	    }
 	    
 	    $params= json_decode($params);
-	    if (empty($params) || empty($params->data)) {
+	    if (empty($params)) {
 	    	return null;
 	    }
 
 	    // パラメータ文字列の分割
-	    return (array)$params->data;
+	    return (array)$params;
 	}
 }
 ?>
