@@ -24,6 +24,5 @@ if( isset( $_POST['submit'] ) ){
 	}
 	
 }
-
 //EntryTran入力・結果画面
 require_once( MAEDU_SAMPLE_BASE . '/display/getMethod.php' );

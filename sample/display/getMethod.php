@@ -23,7 +23,7 @@
 		<table>
 			<tbody>
 				<tr>
-					<th scope="row">ログインID(LoginID)</th>
+					<th scope="row">ログインID(LoginID)「必須」</th>
 					<td><input name="login_id" type="text" value="<?php echo isset($_GET['login_id'])? $_GET['login_id'] : '' ?>" tabindex="11" /></td>
 				</tr>
 				<tr>
